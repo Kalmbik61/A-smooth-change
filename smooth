@@ -3,13 +3,13 @@ let a = document.querySelector("#id"); // use some ID for UI
 function sumStep(sum) {
   let num = 0;
   const intervalId = setInterval(function () {
-    num += 10;
+    num += 10;      // add some step change
     if (num > sum) {
       console.log("stop");
       return clearInterval(intervalId);
     }
     return (a.textContent = num);
-  }, 5);
+  }, 5); // add interval
 }
 
 sumStep(1000); // create some "stop" element ( add roof number)
